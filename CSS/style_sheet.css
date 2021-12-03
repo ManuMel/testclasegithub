@@ -1,0 +1,325 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Raleway', sans-serif;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+.backgroundGral {
+	background-color: rgb(245, 247, 247);
+}
+
+/* propiedades del pie de página */
+
+footer	{
+	background-color: rgb(82, 125, 125);
+	text-align: center;	
+	padding: 15px 30px;
+	bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+/* estilo del logo, barra de navegación y header en todo el sitio */
+
+.barra {
+	width: 100%;
+	position: sticky;
+	box-sizing: border-box;
+	top: 0;
+	background-color: white;
+	height: 100px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.navBarr {
+	font-size: 2.5rem;
+}
+
+
+.logo {
+	width: 100px;
+}
+
+.headerGral {
+	height: 10vh;
+	background-image: url(../img/background_header.jpg);
+	background-attachment: fixed;
+	background-position: top right;
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: white;
+	text-align: center;
+	padding-top: 2rem;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+
+.alto {
+	height: 50vh;
+}
+
+
+.tarjeta > div {
+	background: radial-gradient(#b3ffe6, #f2e6ff);
+	font-size: 2rem;
+}
+
+
+.lineaSup {
+	background-color: rgb(82, 125, 125);
+	height: 5px;
+	border-radius: 10px 10px 0 0;
+}
+
+.lineaInf {
+	background-color: rgb(217, 222, 222);
+	height: 1px;
+	width: 96%;
+	margin-left: 2%;
+}
+
+.galHome {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	box-sizing: border-box;
+}
+
+.galHome div {
+	margin: 10px;
+	box-sizing: border-box;
+}
+
+.galHome img {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+
+.grid {
+	display: grid;
+	width: 100%;
+}
+
+.gridAreaHome {
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "mision" "vision" "historia";
+	grid-gap: 20px;
+	width: 100%;
+	margin-top: 20px;
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+}
+
+.gridAreaHome article {
+	background-color: white;
+	border-radius: 10px;
+}
+
+.gridAreaHome h3 {
+	font-size: 2.5rem;
+	color: rgb(82, 125, 125);
+	padding: 5px 0 0 30px;
+}
+
+.gridAreaHome p {
+	font-size: 2rem;
+	padding: 10px 15px 10px 20px;
+}
+
+.mision {
+	grid-area: mision;
+}
+
+.vision {
+	grid-area: vision;
+}
+
+.historia {
+	grid-area: historia;
+}
+
+
+#contenedor {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-template-areas: "navG" "headG" "galeria" "mainG" "footG";
+}
+
+#navG {
+	grid-area: navG;
+}
+
+#headerG {
+	grid-area: headG;
+}
+
+#galeria {
+	grid-area: galeria;
+}
+
+#mainG {
+	grid-area: mainG;
+}
+
+#footerG {
+	grid-area: footG;
+}
+
+@media only screen and (min-width: 768px){
+
+	.gridAreaHome {
+		grid-template-columns: repeat(2, 50%);
+		grid-template-rows: 50% 50%;
+		grid-template-areas: "mision vision" "historia .";
+	}
+
+	.headerGral {
+		height: 10vh;
+		font-size: 2rem;
+	}
+}
+
+	
+@media only screen and (min-width: 1200px){
+
+	.gridAreaHome {
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: 1fr;
+		grid-template-areas: "mision vision historia";
+	}
+}
+
+/* estilos de la página "productos" */
+
+.gridProductos {
+	grid-template-columns: 40% 40% 20%;
+	height: 30px;
+	font-size: 2rem;
+	text-align: center;
+	background-color:rgb(82, 125, 125);
+	color: white;
+	
+}
+
+.gridProductosDatos {
+	grid-template-columns: 40% 40% 20%;
+	height: 30px;
+	font-size: 1.5rem;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.gridProductosDatos div {
+	border: solid 1px;
+	padding-left: 10px;
+}
+
+/* estilos de la página "recetas" */
+
+.margin {
+	margin: 20px;
+}
+
+.columnrowStartEnd {
+	grid-template-columns: repeat(5, 1fr);
+	height: auto;
+	grid-gap: 10px;
+	margin-top: 20px;
+	padding: 0 20px 0 20px;
+	box-sizing: border-box;
+	border: solid black 1px;
+	border-radius: 10px;
+}
+
+.columnrowStartEndTitulo {
+	grid-column: 1/6;
+	grid-row: 1/1;
+	display: flex;
+	align-items: center;
+	margin-top: 10px;
+	font-size: 3rem;
+	color: rgb(82, 125, 125);;
+}
+
+.columnrowStartEndImg {
+	grid-column: 1/2;
+	grid-row: 2/2;
+	width: 100%;
+}
+
+.columnrowStartEndProc {
+	grid-column: 2/6;
+	grid-row: 2/2;
+	margin-bottom: 20px;
+}
+
+.textHeadTable {
+	font-size: 2.5rem;
+	color: white;
+	background-color: rgb(82, 125, 125);
+	text-align: center;
+}
+
+.textBodyTable td {
+	font-size: 1.5rem;
+	padding-left: 20px;
+}
+
+/* estilos de la página "sucursales" */
+
+.barSucursales {
+	display: flex;
+	margin-top: 20px;
+}
+
+.barSucursales div{
+	flex-direction: column;
+	margin-left: 20px;
+	align-items: center;
+}
+
+.tituloSucursal {
+	font-size: 3rem;
+}
+
+.direcSucursal {
+	font-size: 2rem;
+	margin-top: 20px;
+}
+
+/* estilos de la página "contacto" */
+
+.boxContacto {
+	width: 100%;
+	padding: 20px;
+	box-sizing: border-box;
+
+}
+
+.boxFieldset {
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.tituloContacto {
+	font-size: 3.5rem;
+}
+
+label {
+	font-size: 2rem;
+}
+
+input {
+	font-size: 2rem;
+}
