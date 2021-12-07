@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 test
+=======
+se realiza modificación desde repositorio remoto
+>>>>>>> a88bec26974bd5e42141e53e1a98cc531c230732
