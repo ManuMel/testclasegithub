@@ -89,7 +89,7 @@ html {
   grid-gap: 20px;
   width: 100%;
   margin-top: 20px;
-  padding: 0 20px 0 20px;
+  padding: 0 15px 0 15px;
   box-sizing: border-box; }
 
 .gridAreaHome article {
@@ -103,7 +103,7 @@ html {
 
 .gridAreaHome p {
   font-size: 2rem;
-  padding: 10px 15px 10px 20px; }
+  padding: 10px 10px 10px 15px; }
 
 .mision {
   grid-area: mision; }
