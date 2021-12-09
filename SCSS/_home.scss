@@ -1,0 +1,121 @@
+.backgroundGral {
+	background-color: $colorFondo;
+}
+
+
+.nav__logo--ancho {
+    width: $w-100px;
+}
+
+.nav__fondo--color {
+    background-color: $colorNav;
+}
+
+
+.headerGral {
+	height: 10vh;
+	background-image: url(../img/background_header.jpg);
+	background-attachment: fixed;
+	background-position: top right;
+	font-weight: 600;
+	font-size: 1.5rem;
+	color: white;
+	text-align: center;
+	padding-top: 2rem;
+	box-sizing: border-box;
+	width: $w-100pc;
+}
+
+.nav__texto--tamanio {
+	font-size: 2.5rem;
+}
+
+.tarjeta > div {
+	font-size: 2rem;
+}
+
+.card__borde--colorRosa {
+	border-color: $rosa;	
+}
+
+.card__borde--colorAmarillo {
+	border-color: $amarillo;	
+}
+
+.card__borde--colorNaranja {
+	border-color: $naranja;	
+}
+
+.card__texto--colorRojo {
+	color: $rojo;
+}
+
+.card__texto--colorAzul {
+	color: $azul;
+}
+
+.card__texto--colorMorado {
+	color: $morado;
+}
+
+.lineaSup {
+	background-color: $colorMain;
+	height: 5px;
+	border-radius: 10px 10px 0 0;
+}
+
+
+
+
+.grid {
+	display: grid;
+	width: $w-100pc;
+}
+
+.gridAreaHome {
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "mision" "vision" "historia";
+	grid-gap: 20px;
+	width: $w-100pc;
+	margin-top: 20px;
+	padding: 0 15px 0 15px;
+	box-sizing: border-box;
+}
+
+.gridAreaHome article {
+	background-color: white;
+	border-radius: 10px;
+}
+
+.gridAreaHome h3 {
+	font-size: 2.5rem;
+	color: $colorMain;
+	padding: 5px 0 0 30px;
+}
+
+.gridAreaHome p {
+	font-size: 2rem;
+	padding: 10px 10px 10px 15px;
+}
+
+.mision {
+	grid-area: mision;
+}
+
+.vision {
+	grid-area: vision;
+}
+
+.historia {
+	grid-area: historia;
+}
+
+footer	{
+	background-color: $colorMain;
+	text-align: center;	
+	padding: 15px 30px;
+	bottom: 10px;
+	width: $w-100pc;
+	box-sizing: border-box;
+}

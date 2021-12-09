@@ -1,0 +1,19 @@
+.barSucursales {
+	display: flex;
+	margin-top: 20px;
+}
+
+.barSucursales div{
+	flex-direction: column;
+	margin-left: 20px;
+	align-items: center;
+}
+
+.tituloSucursal {
+	font-size: 3rem;
+}
+
+.direcSucursal {
+	font-size: 2rem;
+	margin-top: 20px;
+}

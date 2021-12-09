@@ -1,0 +1,22 @@
+.gridProductos {
+	grid-template-columns: 40% 40% 20%;
+	height: 30px;
+	font-size: 2rem;
+	text-align: center;
+	background-color:$colorMain;
+	color: white;
+	
+}
+
+.gridProductosDatos {
+	grid-template-columns: 40% 40% 20%;
+	height: 30px;
+	font-size: 1.5rem;
+	text-align: left;
+	box-sizing: border-box;
+}
+
+.gridProductosDatos div {
+	border: solid 2px;
+	padding-left: 10px;
+}

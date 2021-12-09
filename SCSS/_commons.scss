@@ -1,0 +1,50 @@
+// var globales
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+
+// var colores
+
+$colorMain: rgb(82, 125, 125);
+$colorFondo: rgb(245, 247, 247);
+$colorNav: rgb(152,251,152);
+$rojo: red;
+$amarillo: yellow;
+$azul: blue;
+$naranja: orange;
+$morado: purple;
+$rosa: pink;
+
+
+// var size
+$w-100px: 100px;
+$w-100pc: 100%;
+
+//operaciones
+
+.lineaInf {
+	background-color: rgb(217, 222, 222);
+	height: 1px;
+	width: ($w-100pc - 4%);
+	margin-left: 2%;
+} 
+
+//bucle
+@for $i from 1 through 5 {
+	.w-#{$i}{
+		width: 20% * $i;
+	}
+}
+
+
+
+// var display
+
+$d-flex: flex;
